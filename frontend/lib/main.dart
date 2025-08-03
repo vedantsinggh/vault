@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import './ui/dashboard.dart';
+import './ui/habit.dart';
+import './ui/expense.dart';
 import './ui/planner.dart';
 
 void main() {
@@ -714,27 +716,3 @@ class Task {
 }
 
 enum TaskPriority { low, medium, high }
-
-class ExpensesScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'Expenses Screen',
-        style: TextStyle(color: Colors.white, fontSize: 24),
-      ),
-    );
-  }
-}
-
-class HabitsScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'Habits Screen',
-        style: TextStyle(color: Colors.white, fontSize: 24),
-      ),
-    );
-  }
-}
